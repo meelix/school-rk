@@ -16,7 +16,8 @@ export default {
                 imst: resolve(__dirname, 'imst/index.html'),
                 telfs: resolve(__dirname, 'telfs/index.html'),
                 kramsach: resolve(__dirname, 'kramsach/index.html'),
-                images: resolve(__dirname, 'images/'),
+                a: resolve(__dirname, 'images/store.svg'),
+                b: resolve(__dirname, 'images/container.svg'),
             }
         }
     },
