@@ -1,0 +1,3 @@
+[submodule "basscss"]
+	path = basscss
+	url = https://github.com/meelix/basscss.git
