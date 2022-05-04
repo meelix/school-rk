@@ -25,7 +25,8 @@
     "postcss-nested": "^5.0.6",
     "proj4": "^2.8.0",
     "proj4leaflet": "^1.0.2",
-    "responsive-layout": "^0.0.1-security"
+    "responsive-layout": "^0.0.1-security",
+    "rollup-plugin-folder-input": "^1.0.1"
   },
   "resolutions": {
     "postcss": "8.4.12"

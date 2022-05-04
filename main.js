@@ -1,5 +1,8 @@
 import './style.css';
 
+import storeImg from './images/store.svg'
+import containerImg from './images/container.svg'
+
 import * as L from 'leaflet';
 import 'leaflet-gesture-handling';
 
@@ -102,12 +105,12 @@ L.tileLayer('https://tile.jawg.io/jawg-streets/{z}/{x}/{y}{r}.png?access-token=P
 map.attributionControl.addAttribution("<a href=\"https://www.jawg.io\" target=\"_blank\">&copy; Jawg</a> - <a href=\"https://www.openstreetmap.org\" target=\"_blank\">&copy; OpenStreetMap</a>&nbsp;contributors")
 
 let storeIcon = L.icon({
-  iconUrl: '/images/store.svg',
+  iconUrl: storeImg,
   iconSize: [30,30],
   iconAnchor: [12,24],
 });
 let containerIcon = L.icon({
-  iconUrl: '/images/container.svg',
+  iconUrl: containerImg,
   iconSize: [30,30],
   iconAnchor: [12,24],
 });
