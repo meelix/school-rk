@@ -163,7 +163,9 @@ let stores = [
     icon: marker.options.pane == "stores" ? storeIcon : containerIcon,
   }}).addTo(map);
 });
-document.querySelectorAll("#map-filter [data-pane]").forEach(btn => {btn.addEventListener("click", e => {
+document.querySelectorAll("[data-pane]").forEach(btn => {btn.addEventListener("click", e => {
+  document.querySelectorAll("[data-pane]").forEach(btn => {btn.classList.remove("active")})
+  document.querySelectorAll(`[data-pane = "${btn.dataset.pane}"]`).forEach(btn=>btn.classList.add("active"))
   switch (btn.dataset.pane) {
     case "stores":
       map.getPane("stores").style.zIndex = 600;

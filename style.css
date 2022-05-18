@@ -80,6 +80,7 @@ body {
   margin-left: calc(-1 * var(--space-1));
   margin-right: calc(-1 * var(--space-1));
   > * {
+    --color: asdf;
     padding-left: var(--space-1);
     padding-right: var(--space-1);
   }
@@ -211,7 +212,8 @@ a {
   }
   figcaption {
     position: absolute;
-    bottom: 30%;
+    top: 60%;
+    transform: translateY(-50%);
     padding: 0 clamp(20px, 15vw, 150px);
     max-width: calc(800px + clamp(20px, 50%, 150px));
     color: var(--white);
@@ -290,6 +292,11 @@ a {
     right: 0;
     bottom: 0;
     left: 0;
+
+    img {
+      width: 256px;
+      height: 256px;
+    }
   }
 }
 .leaflet-shadow-pane {
@@ -336,6 +343,23 @@ footer {
   background-color: #666;
   color: #fff;
 }
+
+/* #map-buttons {
+  display: flex;
+  button {
+    background-color: #f00a;
+    appearance: none;
+    border: 0;
+    /* width: max(); */
+    padding: 0;
+    margin: 0;
+    padding: 
+
+    /* &.active {
+      background-color: #f00
+    } */
+  }
+} */
 
 @media (--breakpoint-lg) {
   :root {

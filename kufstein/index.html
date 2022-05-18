@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kufstein - Kleiderladen Rotes Kreuz</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+    <link rel="stylesheet" href="//unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.css" type="text/css">
   </head>
-  <body stype="background:#333;color:#dec">
+  <body>
     <div id="menu"></div>
     <div id="header">
       <figure>
@@ -23,42 +27,44 @@
       </figure>
     </div>
 
-    <div class="lg-flex">
-      <div class="lg-col-4">
-        <img src="https://picsum.photos/150" alt="">
-        <h2 class="h3">Kufstein</h2>
-        <p>Salurerstr. 38<br>6330 Kufstein</p>
-        <p>
-          Öffnungszeiten:<br>
-          Mo. 13:00 bis 18:00 Uhr<br>
-          Mo. 13:00 bis 18:00 Uhr<br>
-          Di. 09:00 bis 13:00 Uhr<br>
-          Mi. 13:00 bis 18:00 Uhr<br>
-          Fr. 09:00 bis 18:00 Uhr<br>
-          Sa. 09:00 bis 13:00 Uhr<br>
-        </p>
-      </div>
-      <div class="lg-col-4">
-        <img src="https://picsum.photos/150" alt="">
-        <h2 class="h3">Rattenberg</h2>
-        <p>Hassauer Straße 70<br>6240 Rattenberg</p>
-        <p>
-          Öffnungszeiten:<br>
-          Mo. 08:30 bis 12:00 Uhr
-          Mi. 08:30 bis 12:00 Uhr
-          Sa. 08:30 bis 12:00 Uhr
-        </p>
-      </div>
-      <div class="lg-col-4">
-        <img src="https://picsum.photos/150" alt="">
-        <h2 class="h3">Wörgl</h2>
-        <p>Brixentaler Straße 50/52<br>6300 Wörgl</p>
-        <p>
-          Öffnungszeiten:<br>
-          Mi. 13:00 bis 18:00 Uhr
-          Fr. 13:30 bis 18:00 Uhr
-          Sa. 09:00 bis 13:00 Uhr
-        </p>
+    <div class="px4 col-12 col-md-10 col-lg-8 my4">
+      <div class="lg-flex gaps">
+        <div class="lg-col-4 center">
+          <img src="https://picsum.photos/150" alt="" class="px2">
+          <h2 class="h3">Kufstein</h2>
+          <p>Salurerstr. 38<br>6330 Kufstein</p>
+          <p>
+            Öffnungszeiten:<br>
+            Mo. 13:00 bis 18:00 Uhr<br>
+            Mo. 13:00 bis 18:00 Uhr<br>
+            Di. 09:00 bis 13:00 Uhr<br>
+            Mi. 13:00 bis 18:00 Uhr<br>
+            Fr. 09:00 bis 18:00 Uhr<br>
+            Sa. 09:00 bis 13:00 Uhr<br>
+          </p>
+        </div>
+        <div class="lg-col-4 center">
+          <img src="https://picsum.photos/150" alt="" class="px2">
+          <h2 class="h3">Rattenberg</h2>
+          <p>Hassauer Straße 70<br>6240 Rattenberg</p>
+          <p>
+            Öffnungszeiten:<br>
+            Mo. 08:30 bis 12:00 Uhr
+            Mi. 08:30 bis 12:00 Uhr
+            Sa. 08:30 bis 12:00 Uhr
+          </p>
+        </div>
+        <div class="lg-col-4 center">
+          <img src="https://picsum.photos/150" alt="" class="px2">
+          <h2 class="h3">Wörgl</h2>
+          <p>Brixentaler Straße 50/52<br>6300 Wörgl</p>
+          <p>
+            Öffnungszeiten:<br>
+            Mi. 13:00 bis 18:00 Uhr
+            Fr. 13:30 bis 18:00 Uhr
+            Sa. 09:00 bis 13:00 Uhr
+          </p>
+        </div>
       </div>
     </div>
 
@@ -158,6 +164,6 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script type="module" src="/main.js"></script>
     <!-- prugecss classes -->
-    <div stype="display: none !important;" class="active"></div>
+    <div style="display: none !important;" class="active"></div>
   </body>
 </html>
