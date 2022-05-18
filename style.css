@@ -344,22 +344,21 @@ footer {
   color: #fff;
 }
 
-/* #map-buttons {
+#map-buttons {
   display: flex;
   button {
     background-color: #f00a;
     appearance: none;
     border: 0;
-    /* width: max(); */
     padding: 0;
     margin: 0;
-    padding: 
+    padding: 1rem 0;
 
-    /* &.active {
+    &.active {
       background-color: #f00
-    } */
+    }
   }
-} */
+}
 
 @media (--breakpoint-lg) {
   :root {
