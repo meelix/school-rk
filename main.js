@@ -1,5 +1,7 @@
 import './style.css';
 
+import './swiper/swiper-bundle.min.js';
+
 import storeImg from './images/store.svg'
 import containerImg from './images/container.svg'
 
@@ -18,7 +20,6 @@ const paths = {
 };
 const menu = document.getElementById("menu");
 for (const [key, value] of Object.entries(paths)) {
-  // console.log(`${key}: ${value}`);
   let item = document.createElement("a");
   item.setAttribute("href", key);
   item.innerHTML = value;

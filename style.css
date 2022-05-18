@@ -5,6 +5,10 @@
 @import "basscss/modules/type-scale";
 @import "basscss/modules/typography";
 @import "basscss/modules/layout";
+@import "node_modules/basscss-responsive-margin/index.css";
+@import "node_modules/basscss-responsive-padding/index.css";
+@import "node_modules/basscss-responsive-layout/index.css";
+@import "node_modules/basscss-responsive-position/index.css";
 
 @font-face {
   font-family: 'Dunant';
@@ -40,7 +44,7 @@
 :root {
   --primary: #f00;
   --black: #000;
-  --gray: rgb(131 131 131);
+  --gray: hsl(0, 0%, 36%);
   --white: #fff;
 
   --h00: 3rem;
@@ -67,6 +71,20 @@ body {
   padding: 0 20px;
 }
 
+.fit {
+  width: 100%;
+  height: auto;
+}
+
+.gaps {
+  margin-left: calc(-1 * var(--space-1));
+  margin-right: calc(-1 * var(--space-1));
+  > * {
+    padding-left: var(--space-1);
+    padding-right: var(--space-1);
+  }
+}
+
 img {
   width: 100%;
   height: auto;
@@ -81,12 +99,21 @@ a {
     color: color-mod(var(--primary) b(30%));
   }
 }
+
 .btn {
-  border: 1px solid var(--primary);
+  border: 1px solid transparent;
   padding: .5rem 1rem;
   text-decoration: none;
-  transition: color .15s, background-color .15s;
+  transition: color .15s, background-color .15s, border-color .15s;
   display: inline-block;
+  &:hover, &:focus, &:active {
+    background-color: transparent;
+  }
+}
+.btn-primary {
+  color: var(--primary);
+  background: none;
+  border-color: var(--primary);
   &:hover, &:focus, &:active {
     background-color: var(--primary);
     color: var(--white);
@@ -94,6 +121,48 @@ a {
   &:active {
     border-color: color-mod(var(--primary) b(30%));
     background-color: color-mod(var(--primary) b(30%));
+  }
+  &-filled {
+    color: #fff;
+    background-color: var(--primary);
+    border-color: var(--primary);
+    &:hover, &:focus, &:active {
+      border-color: color-mod(var(--primary) b(15%));
+      background-color: color-mod(var(--primary) b(15%));
+    }
+    &:active {
+      border-color: color-mod(var(--primary) b(30%));
+      background-color: color-mod(var(--primary) b(30%));
+      color: var(--white);
+    }
+  }
+}
+.btn-gray {
+  color: var(--gray);
+  background: none;
+  border-color: var(--gray);
+  &:hover, &:focus, &:active {
+    background-color: var(--gray);
+    color: var(--white);
+  }
+  &:active {
+    border-color: color-mod(var(--gray) b(30%));
+    background-color: color-mod(var(--gray) b(30%));
+  }
+  &-filled {
+    color: #fff;
+    background-color: var(--gray);
+    border-color: var(--gray);
+    /* &:hover, &:focus, &:active {
+      border-color: color-mod(var(--gray) b(15%));
+      background-color: color-mod(var(--gray) b(15%));
+    } */
+    &:active {
+      border-color: color(var(--gray) darken(30%));
+      /* background-color: color-mod(var(--gray) b(30%)); */
+      background-color: color(var(--gray) darken(50%));
+      color: var(--white);
+    }
   }
 }
 
@@ -256,6 +325,16 @@ a {
 
 .bg1 {
   background-image: url("https://picsum.photos/2000/1334");
+}
+
+#kleiderladen-logo {
+  height: calc(var(--h00) - var(--space-2));
+  width:auto;
+}
+
+footer {
+  background-color: #666;
+  color: #fff;
 }
 
 @media (--breakpoint-lg) {

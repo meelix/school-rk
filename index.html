@@ -5,8 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    <title>Kleiderladen Rotes Kreuz</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <title>test Kleiderladen Rotes Kreuz</title>
+    <link rel="stylesheet" href="./swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
     integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
     crossorigin=""/>
@@ -21,7 +21,7 @@
         </picture>
         <figcaption class="flex">
           <div class="display-none md-flex col-3 justify-end">
-            <img style="height: calc(var(--h00) - var(--space-2));width:auto;" src="/images/kleiderladen-tirol.png" alt="Kleiderladen Tirol Logo" class="mt1 px3">
+            <img width="100" height="100" id="kleiderladen-logo" src="/images/kleiderladen-tirol.png" alt="Kleiderladen Tirol Logo" class="mt1 px3">
           </div>
           <div class="col-12 md-col-9">
             <h1 class="h00 mt0 mb2 bold">Kleiderläden</h1>
@@ -32,7 +32,7 @@
     </div>
 
     <div class="bg1 flex flex-wrap">
-      <div class="col-12 sm-col-6 md-col-4 teaserbox">
+      <div class="col-12 sm-col-4 md-col-4 teaserbox">
         <a href="/kufstein/">
           <h3>Kufstein</h3>
           <div class="content">
@@ -40,7 +40,7 @@
           </div>
         </a>
       </div>
-      <div class="col-12 sm-col-6 md-col-4 teaserbox">
+      <div class="col-12 sm-col-4 md-col-4 teaserbox">
         <a href="/landeck/">
           <h3>Landeck</h3>
           <div class="content">
@@ -48,7 +48,7 @@
           </div>
         </a>
       </div>
-      <div class="col-12 sm-col-6 md-col-4 teaserbox">
+      <div class="col-12 sm-col-4 md-col-4 teaserbox">
         <a href="/wipptal/">
           <h3>Wipptal</h3>
           <div class="content">
@@ -56,7 +56,7 @@
           </div>
         </a>
       </div>
-      <div class="col-12 sm-col-6 md-col-4 teaserbox">
+      <div class="col-12 sm-col-4 md-col-4 teaserbox">
         <a href="/imst/">
           <h3>Imst</h3>
           <div class="content">
@@ -64,7 +64,7 @@
           </div>
         </a>
       </div>
-      <div class="col-12 sm-col-6 md-col-4 teaserbox">
+      <div class="col-12 sm-col-4 md-col-4 teaserbox">
         <a href="/telfs/">
           <h3>Telfs</h3>
           <div class="content">
@@ -72,7 +72,7 @@
           </div>
         </a>
       </div>
-      <div class="col-12 sm-col-6 md-col-4 teaserbox">
+      <div class="col-12 sm-col-4 md-col-4 teaserbox">
         <a href="/kramsach/">
           <h3>Kramsach</h3>
           <div class="content">
@@ -90,21 +90,21 @@
       <h3 class="caps mt4 mb3 c-primary">Eine gute Alternative</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, doloremque soluta asperiores voluptatum itaque deleniti, dolorum perspiciatis non natus accusantium iure at! Tenetur neque dignissimos non recusandae quibusdam incidunt minima hic vitae ea eligendi, nesciunt quisquam eaque quod suscipit mollitia unde at est! Quas et minus doloribus culpa, omnis placeat porro repudiandae perspiciatis atque. Sit recusandae eius ducimus fugit provident, doloremque temporibus iusto reprehenderit, nostrum natus possimus quasi quam dolor.</p>
 
-      <div class="flex flex-wrap my4">
-        <div class="md-col-4 px1">
-        <img src="https://picsum.photos/500/500" alt="">
+      <div class="flex flex-wrap my4 gaps">
+        <div class="col-12 sm-col-4">
+          <img src="https://picsum.photos/500/500" class="fit" alt="">
         </div>
-        <div class="md-col-4 px1">
-          <img src="https://picsum.photos/500/500" alt="">
+        <div class="col-12 sm-col-4">
+          <img src="https://picsum.photos/500/500" class="fit" alt="">
         </div>
-        <div class="md-col-4 px1">
-          <img src="https://picsum.photos/500/500" alt="">
+        <div class="col-12 sm-col-4">
+          <img src="https://picsum.photos/500/500" class="fit" alt="">
         </div>
       </div>
     </div>
 
-    <div class="px4 col-12 col-md-10 col-lg-8">
-      <h3 class="caps mt4 mb3 c-primary">Eine gute Alternative</h3>
+    <div class="px4 col-12 col-md-10 col-lg-8 mb4">
+      <h3 class="caps mt4 mb c-primary">Eine gute Alternative</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, doloremque soluta asperiores voluptatum itaque deleniti, dolorum perspiciatis non natus accusantium iure at! Tenetur neque dignissimos non recusandae quibusdam incidunt minima hic vitae ea eligendi, nesciunt quisquam eaque quod suscipit mollitia unde at est! Quas et minus doloribus culpa, omnis placeat porro repudiandae perspiciatis atque. Sit recusandae eius ducimus fugit provident, doloremque temporibus iusto reprehenderit, nostrum natus possimus quasi quam dolor.</p>
     </div>
 
@@ -118,20 +118,63 @@
     </div>
 
     <div class="px4 my4 col-12 col-md-10 col-lg-8 flex flex-wrap">
-      <div class="col md-col-6 pr2">
+      <div class="col md-col-6 md-pr2">
         <h3>Bla Bla</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut ratione itaque eum delectus earum voluptates eos modi accusamus natus, reiciendis minima. Voluptatibus facere architecto laborum sequi aspernatur non natus perspiciatis, at adipisci eum. Hic alias excepturi rerum esse eum fugit saepe, debitis temporibus autem! Dolore dicta quod accusantium architecto eaque repellendus at odio placeat, unde possimus non ullam magni, deserunt molestiae dolorem, omnis quia eum tempore. Cum voluptates repudiandae possimus quis ipsum dolor eveniet id, eligendi deserunt magni at voluptatibus laborum fugiat hic? Aliquam quisquam, necessitatibus natus enim quam aspernatur voluptates et. Maiores aliquid ipsam eligendi ducimus, labore error.</p>
       </div>
-      <div class="col md-col-6 pl2">
+      <div class="col md-col-6 md-pl2">
         <h3>Mehr Bla</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut ratione itaque eum delectus earum voluptates eos modi accusamus natus, reiciendis minima. Voluptatibus facere architecto laborum sequi aspernatur non natus perspiciatis, at adipisci eum. Hic alias excepturi rerum esse eum fugit saepe, debitis temporibus autem! Dolore dicta quod accusantium architecto eaque repellendus at odio placeat, unde possimus non ullam magni, deserunt molestiae dolorem, omnis quia eum tempore. Cum voluptates repudiandae possimus quis ipsum dolor eveniet id, eligendi deserunt magni at voluptatibus laborum fugiat hic? Aliquam quisquam.</p>
 
         <!-- why??? -->
-        <a href="#öfnungszeiten" class="btn btn-filled mt2">Öffnungszeiten</a>
+        <a href="#öfnungszeiten" class="btn btn-primary-filled mt2">Zu unseren Öffnungszeiten</a>
       </div>
     </div>
 
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <footer>
+      <div class="flex flex-wrap px4 col-12 col-md-10 col-lg-8 gaps">
+        <div class="sm-col-6 lg-col-3">
+          <h3 class="h4 strong">Spendenkonto Rotes Kreuz Tirol</h3>
+          <p>Tiroler Sparkesse<br>IBAN: AT19 1234 5678 9101 11213<br>BIC: SPHATAT22XXX</p>
+          <div class="btn btn-gray-filled">Mein Rotes Kreuz Tirol</div>
+          <h3 class="h4 strong mt3">Spendenkonto Rotes Kreuz Tirol Gemeinnützige Rettungsdienst GMBH</h3>
+          <p>Hypo Tirol<br>IBAN: AT71 1234 5678 9101 11213<br>BIC: YPAT22</p>
+        </div>
+        <div class="sm-col-6 lg-col-3">
+          <h3 class="h4 strong">Newsletter</h3>
+          <p>Melden Sie sich blabla... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur aperiam distinctio molestiae ex labore quam?</p>
+          <form action="/newsletter.php" method="post" class="flex flex-column">
+            <label for="newsletter_name">Name</label>
+            <input id="newsletter_name" placeholder="Max Mustermann">
+            <label for="newsletter_email" class="pt1">Email-adresse</label>
+            <input id="newsletter_email" placeholder="max@mustermann.com">
+            <button type="submit" class="mt2">Absenden</button>
+          </form>
+        </div>
+        <div class="sm-col-6 lg-col-3">
+          <h3 class="h4 strong">Häufig Gesuchte Seiten</h3>
+          <div class="flex flex-column">
+            <div class="btn btn-gray-filled mb1">Erste Hilfe Finden</div>
+            <div class="btn btn-gray-filled mb1">Blutspende und Blutspendetermine</div>
+            <div class="btn btn-gray-filled mb1">Rund um Covid-19</div>
+            <div class="btn btn-gray-filled mb1">Zivieldient beim Roten Kreuz</div>
+          </div>
+          
+        </div>
+        <div class="sm-col-6 lg-col-3">
+          <h3 class="h4 strong">Medien & Sozial</h3>
+          <div class="flex flex-column">
+            <div class="btn btn-gray-filled mb1">Facebook</div>
+            <div class="btn btn-gray-filled mb1">Instagram</div>
+            <div class="btn btn-gray-filled mb1">Youtube</div>
+            <div class="btn btn-gray-filled mb1">Podcasts</div>
+            <div class="btn btn-gray-filled mb1">Twitter</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
     <script type="module" src="/main.js"></script>
     <!-- prugecss classes -->
     <div stype="display: none !important;" class="active"></div>

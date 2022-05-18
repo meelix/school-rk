@@ -16,6 +16,10 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.4",
+    "basscss-responsive-layout": "^1.0.1",
+    "basscss-responsive-margin": "^1.1.0",
+    "basscss-responsive-padding": "^1.1.0",
+    "basscss-responsive-position": "^1.0.0",
     "cssnano": "^5.1.7",
     "leaflet": "^1.8.0",
     "leaflet-gesture-handling": "^1.2.2",

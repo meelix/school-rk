@@ -5,6 +5,6 @@ module.exports = {
         require('autoprefixer'),
         require('cssnano'),
         require('postcss-color-mod-function'),
-        require('postcss-import'),
+        // require('postcss-import'),
     ],
 };
