@@ -136,11 +136,11 @@
     </div>
 
     <footer>
-      <div class="flex flex-wrap px4 col-12 col-md-10 col-lg-8 gaps">
+      <div class="flex flex-wrap px4 col-12 col-md-10 col-lg-8 gaps pt3 pb3">
         <div class="sm-col-6 lg-col-3">
           <h3 class="h4 strong">Spendenkonto Rotes Kreuz Tirol</h3>
           <p>Tiroler Sparkesse<br>IBAN: AT19 1234 5678 9101 11213<br>BIC: SPHATAT22XXX</p>
-          <div class="btn btn-gray-filled">Mein Rotes Kreuz Tirol</div>
+          <a href="https://www.mein-roteskreuz.at/tirol" class="btn btn-gray-filled">Mein Rotes Kreuz Tirol</a>
           <h3 class="h4 strong mt3">Spendenkonto Rotes Kreuz Tirol Gemeinnützige Rettungsdienst GMBH</h3>
           <p>Hypo Tirol<br>IBAN: AT71 1234 5678 9101 11213<br>BIC: YPAT22</p>
         </div>
@@ -152,31 +152,43 @@
             <input id="newsletter_name" placeholder="Max Mustermann">
             <label for="newsletter_email" class="pt1">Email-adresse</label>
             <input id="newsletter_email" placeholder="max@mustermann.com">
-            <button type="submit" class="mt2">Absenden</button>
+            <div class="mt2">
+              <button type="submit" class="mt2">Absenden</button>
+            </div>
           </form>
         </div>
         <div class="sm-col-6 lg-col-3">
           <h3 class="h4 strong">Häufig Gesuchte Seiten</h3>
           <div class="flex flex-column">
-            <div class="btn btn-gray-filled mb1">Erste Hilfe Finden</div>
-            <div class="btn btn-gray-filled mb1">Blutspende und Blutspendetermine</div>
-            <div class="btn btn-gray-filled mb1">Rund um Covid-19</div>
-            <div class="btn btn-gray-filled mb1">Zivieldient beim Roten Kreuz</div>
+            <a href="https://www.roteskreuz.at/tirol/ich-will-helfen/erste-hilfe-kurse-uebersicht" class="btn btn-gray-filled mb1">Erste Hilfe Finden</a>
+            <a href="https://www.roteskreuz.at/tirol/ich-will-helfen/so-kann-ich-blutspenden" class="btn btn-gray-filled mb1">Blutspende und Blutspendetermine</a>
+            <a href="https://www.roteskreuz.at/tirol/ich-will-helfen/zivildienst" class="btn btn-gray-filled mb1">Rund um Covid-19</a>
+            <a href="https://www.roteskreuz.at/tirol/kriseninterventionstagung" class="btn btn-gray-filled mb1">Zivieldient beim Roten Kreuz</a>
+            <a href="https://www.roteskreuz.at/tirol/rettungsdienst-tirol-die-richtige-rufnummer" class="btn btn-gray-filled mb1">Zivieldient beim Roten Kreuz</a>
           </div>
           
         </div>
         <div class="sm-col-6 lg-col-3">
           <h3 class="h4 strong">Medien & Sozial</h3>
           <div class="flex flex-column">
-            <div class="btn btn-gray-filled mb1">Facebook</div>
-            <div class="btn btn-gray-filled mb1">Instagram</div>
-            <div class="btn btn-gray-filled mb1">Youtube</div>
-            <div class="btn btn-gray-filled mb1">Podcasts</div>
-            <div class="btn btn-gray-filled mb1">Twitter</div>
+            <a class="btn btn-gray-filled mb1" href="https://www.facebook.com/roteskreuztirol"><i class="icon-facebook"></i>Facebook</a>
+            <a class="btn btn-gray-filled mb1" href="https://www.instagram.com/roteskreuztirol"><i class="icon-instagram"></i>Instagram</a>
+            <a class="btn btn-gray-filled mb1" href="https://www.youtube.com/c/roteskreuz"><i class="icon-youtube"></i>Youtube</a>
+            <a class="btn btn-gray-filled mb1" href="https://kraitzpunkt.podigee.io/episodes"><i class="icon-podcast"></i>Podcasts</a>
+            <a class="btn btn-gray-filled mb1" href="https://twitter.com/roteskreuztirol"><i class="icon-twitter"></i>Twitter</a>
           </div>
         </div>
       </div>
+      <div class="px4 col-12 col-md-10 col-lg-8 legal flex items-center ">
+        <p>© 2022 Österreichisches Rotes Kreuz</p>
+        <a href="https://www.roteskreuz.at/tirol/ich-will-mehr-wissen/datenschutzerklaerung" class="btn">Datenschutz</a>
+        <a href="https://www.roteskreuz.at/seite-9" class="btn">Impressum</a>
+      </div>
     </footer>
+    <div class="sticky-footer px4 col-12 col-md-10 col-lg-8 flex justify-between items-center">
+      <a href="#" class="share btn"><span>Seite Teilen</span><i class="icon-share"></i></a>
+      <a href="#" class="share btn"><span>Zum seitenanfang</span><i class="icon-share"></i></a>
+    </div>
 
     <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
     <script type="module" src="/main.js"></script>
