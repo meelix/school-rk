@@ -1,198 +1,324 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex" />
-    <title>test Kleiderladen Rotes Kreuz</title>
-    <link rel="stylesheet" href="./swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
-    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
-    crossorigin=""/>
-    <link rel="stylesheet" href="//unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.css" type="text/css">
-  </head>
-  <body>
-    <div id="menu"></div>
-    <div id="header">
-      <figure>
-        <picture>
-          <img src="https://picsum.photos/2000/1334" alt="swiper-image">
-        </picture>
-        <figcaption class="flex">
-          <div class="display-none md-flex col-3 justify-end">
-            <img width="100" height="100" id="kleiderladen-logo" src="/images/kleiderladen-tirol.png" alt="Kleiderladen Tirol Logo" class="mt1 px3">
-          </div>
-          <div class="col-12 md-col-9">
-            <h1 class="h00 mt0 mb2 bold">Kleiderläden</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda sit repudiandae neque temporibus voluptate debitis illum odio quia placeat repellendus atque perferendis tempore suscipit, at exercitationem, sapiente dicta. Perferendis, iste!</p>
-          </div>
-        </figcaption>
-      </figure>
-    </div>
+<html lang="de">
 
-    <div class="bg1 flex flex-wrap">
-      <div class="col-12 sm-col-4 md-col-4 teaserbox">
-        <a href="/kufstein/">
-          <h3>Kufstein</h3>
-          <div class="content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ad, ducimus eos quas iure dolores dolor illo aliquid natus magnam.</p>
-          </div>
-        </a>
-      </div>
-      <div class="col-12 sm-col-4 md-col-4 teaserbox">
-        <a href="/landeck/">
-          <h3>Landeck</h3>
-          <div class="content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ad, ducimus eos quas iure dolores dolor illo aliquid natus magnam.</p>
-          </div>
-        </a>
-      </div>
-      <div class="col-12 sm-col-4 md-col-4 teaserbox">
-        <a href="/wipptal/">
-          <h3>Wipptal</h3>
-          <div class="content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ad, ducimus eos quas iure dolores dolor illo aliquid natus magnam.</p>
-          </div>
-        </a>
-      </div>
-      <div class="col-12 sm-col-4 md-col-4 teaserbox">
-        <a href="/imst/">
-          <h3>Imst</h3>
-          <div class="content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ad, ducimus eos quas iure dolores dolor illo aliquid natus magnam.</p>
-          </div>
-        </a>
-      </div>
-      <div class="col-12 sm-col-4 md-col-4 teaserbox">
-        <a href="/telfs/">
-          <h3>Telfs</h3>
-          <div class="content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ad, ducimus eos quas iure dolores dolor illo aliquid natus magnam.</p>
-          </div>
-        </a>
-      </div>
-      <div class="col-12 sm-col-4 md-col-4 teaserbox">
-        <a href="/kramsach/">
-          <h3>Kramsach</h3>
-          <div class="content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ad, ducimus eos quas iure dolores dolor illo aliquid natus magnam.</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="px4 col-12 col-md-10 col-lg-8">
-      <h2 class="h1 my4 center c-gray">Rotes Kreuz - Kleiderläden</h2>
-  
-      <h3 class="caps mb3 c-primary">Eine gute Alternative</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, doloremque soluta asperiores voluptatum itaque deleniti, dolorum perspiciatis non natus accusantium iure at! Tenetur neque dignissimos non recusandae quibusdam incidunt minima hic vitae ea eligendi, nesciunt quisquam eaque quod suscipit mollitia unde at est! Quas et minus doloribus culpa, omnis placeat porro repudiandae perspiciatis atque. Sit recusandae eius ducimus fugit provident, doloremque temporibus iusto reprehenderit, nostrum natus possimus quasi quam dolor.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kleiderläden Rotes Kreuz</title>
+    <link rel="stylesheet" href="./dist/main.css">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <meta name="description" content="A webpage without any Javascript. Just plain html & css">
+</head>
 
-      <h3 class="caps mt4 mb3 c-primary">Eine gute Alternative</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, doloremque soluta asperiores voluptatum itaque deleniti, dolorum perspiciatis non natus accusantium iure at! Tenetur neque dignissimos non recusandae quibusdam incidunt minima hic vitae ea eligendi, nesciunt quisquam eaque quod suscipit mollitia unde at est! Quas et minus doloribus culpa, omnis placeat porro repudiandae perspiciatis atque. Sit recusandae eius ducimus fugit provident, doloremque temporibus iusto reprehenderit, nostrum natus possimus quasi quam dolor.</p>
-
-      <div class="flex flex-wrap my4 gaps">
-        <div class="col-12 sm-col-4">
-          <img src="https://picsum.photos/500/500" class="fit" alt="">
-        </div>
-        <div class="col-12 sm-col-4">
-          <img src="https://picsum.photos/500/500" class="fit" alt="">
-        </div>
-        <div class="col-12 sm-col-4">
-          <img src="https://picsum.photos/500/500" class="fit" alt="">
-        </div>
-      </div>
-    </div>
-
-    <div class="px4 col-12 col-md-10 col-lg-8 mb4">
-      <h3 class="caps mt4 mb c-primary">Eine gute Alternative</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, doloremque soluta asperiores voluptatum itaque deleniti, dolorum perspiciatis non natus accusantium iure at! Tenetur neque dignissimos non recusandae quibusdam incidunt minima hic vitae ea eligendi, nesciunt quisquam eaque quod suscipit mollitia unde at est! Quas et minus doloribus culpa, omnis placeat porro repudiandae perspiciatis atque. Sit recusandae eius ducimus fugit provident, doloremque temporibus iusto reprehenderit, nostrum natus possimus quasi quam dolor.</p>
-    </div>
-
-    <div id="map-buttons">
-      <button data-pane="stores">Shops</button>
-      <button data-pane="containers">Sammelstellen</button>
-    </div>
-    <div id="map-wrapper">
-      <div id="map-filter">
-        <button data-pane>Alles</button>
-        <button data-pane="stores">Nur Shops</button>
-        <button data-pane="containers">Nur Sammelstellen</button>
-      </div>
-      <div id="map"></div>
-    </div>
-
-    <div class="px4 my4 col-12 col-md-10 col-lg-8 flex flex-wrap">
-      <div class="col md-col-6 md-pr2">
-        <h3>Bla Bla</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut ratione itaque eum delectus earum voluptates eos modi accusamus natus, reiciendis minima. Voluptatibus facere architecto laborum sequi aspernatur non natus perspiciatis, at adipisci eum. Hic alias excepturi rerum esse eum fugit saepe, debitis temporibus autem! Dolore dicta quod accusantium architecto eaque repellendus at odio placeat, unde possimus non ullam magni, deserunt molestiae dolorem, omnis quia eum tempore. Cum voluptates repudiandae possimus quis ipsum dolor eveniet id, eligendi deserunt magni at voluptatibus laborum fugiat hic? Aliquam quisquam, necessitatibus natus enim quam aspernatur voluptates et. Maiores aliquid ipsam eligendi ducimus, labore error.</p>
-      </div>
-      <div class="col md-col-6 md-pl2">
-        <h3>Mehr Bla</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut ratione itaque eum delectus earum voluptates eos modi accusamus natus, reiciendis minima. Voluptatibus facere architecto laborum sequi aspernatur non natus perspiciatis, at adipisci eum. Hic alias excepturi rerum esse eum fugit saepe, debitis temporibus autem! Dolore dicta quod accusantium architecto eaque repellendus at odio placeat, unde possimus non ullam magni, deserunt molestiae dolorem, omnis quia eum tempore. Cum voluptates repudiandae possimus quis ipsum dolor eveniet id, eligendi deserunt magni at voluptatibus laborum fugiat hic? Aliquam quisquam.</p>
-
-        <!-- why??? -->
-        <a href="#öfnungszeiten" class="btn btn-primary-filled mt2">Zu unseren Öffnungszeiten</a>
-      </div>
-    </div>
-
-    <footer>
-      <div class="flex flex-wrap px4 col-12 col-md-10 col-lg-8 gaps pt3 pb3">
-        <div class="sm-col-6 lg-col-3">
-          <h3 class="h4 strong">Spendenkonto Rotes Kreuz Tirol</h3>
-          <p>Tiroler Sparkesse<br>IBAN: AT19 1234 5678 9101 11213<br>BIC: SPHATAT22XXX</p>
-          <a href="https://www.mein-roteskreuz.at/tirol" class="btn btn-gray-filled">Mein Rotes Kreuz Tirol</a>
-          <h3 class="h4 strong mt3">Spendenkonto Rotes Kreuz Tirol Gemeinnützige Rettungsdienst GMBH</h3>
-          <p>Hypo Tirol<br>IBAN: AT71 1234 5678 9101 11213<br>BIC: YPAT22</p>
-        </div>
-        <div class="sm-col-6 lg-col-3">
-          <h3 class="h4 strong">Newsletter</h3>
-          <p>Melden Sie sich blabla... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur aperiam distinctio molestiae ex labore quam?</p>
-          <form action="/newsletter.php" method="post" class="flex flex-column">
-            <label for="newsletter_name">Name</label>
-            <input id="newsletter_name" placeholder="Max Mustermann">
-            <label for="newsletter_email" class="pt1">Email-adresse</label>
-            <input id="newsletter_email" placeholder="max@mustermann.com">
-            <div class="mt2">
-              <button type="submit" class="mt2">Absenden</button>
+<body id="toggle">
+    <header class="container is-wide">
+        <!-- <div></div> -->
+        <a href="." id="logo">Kleiderläden</a>
+        <div id="menu_toggle"><a href="#toggle" id="open_menu" aria-label="Open menu">Menu</a><a href="#a"
+                id="close_menu" aria-label="Close menu">Menu</a></div>
+        <nav id="menu">
+            <a href="/">Home</a>
+            <a href="/kufstein.html">Kufstein</a>
+            <a href="/landek.html">Landek</a>
+            <a href="/wipptal.html">Wipptal</a>
+            <a href="/imst.html">Imst</a>
+            <a href="/telfs.html">Telfs</a>
+            <a href="/kramsach.html">Kramsach</a>
+        </nav>
+    </header>
+    <div id="wrapper">
+        <div id="top"></div>
+        <main>
+            <!-- <div id="header-slider" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> -->
+            <div id="header-slider">
+                <figure>
+                    <picture>
+                        <source srcset="/images/R14A8662.webp" media="(min-width:1024px)">
+                        <img src="/images/R14A8662_small.webp" alt="">
+                    </picture>
+                    <figcaption class="container is-wide grid">
+                        <div class="col-6 md-col-3 flex">
+                            <img id="kleiderladen-logo" src="/images/kleiderladen-tirol.png" alt="Kleiderladen Tirol Logo" class="mt1 mr2" width="100" height="100">
+                            <div>
+                                <h1>Kleiderläden</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda sit repudiandae neque temporibus voluptate debitis illum odio quia placeat repellendus atque perferendis tempore suscipit, at exercitationem, sapiente dicta. Perferendis, iste!</p>
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
             </div>
-          </form>
-        </div>
-        <div class="sm-col-6 lg-col-3">
-          <h3 class="h4 strong">Häufig Gesuchte Seiten</h3>
-          <div class="flex flex-column">
-            <a href="https://www.roteskreuz.at/tirol/ich-will-helfen/erste-hilfe-kurse-uebersicht" class="btn btn-gray-filled mb1">Erste Hilfe Finden</a>
-            <a href="https://www.roteskreuz.at/tirol/ich-will-helfen/so-kann-ich-blutspenden" class="btn btn-gray-filled mb1">Blutspende und Blutspendetermine</a>
-            <a href="https://www.roteskreuz.at/tirol/ich-will-helfen/zivildienst" class="btn btn-gray-filled mb1">Rund um Covid-19</a>
-            <a href="https://www.roteskreuz.at/tirol/kriseninterventionstagung" class="btn btn-gray-filled mb1">Zivieldient beim Roten Kreuz</a>
-            <a href="https://www.roteskreuz.at/tirol/rettungsdienst-tirol-die-richtige-rufnummer" class="btn btn-gray-filled mb1">Zivieldient beim Roten Kreuz</a>
-          </div>
-          
-        </div>
-        <div class="sm-col-6 lg-col-3">
-          <h3 class="h4 strong">Medien & Sozial</h3>
-          <div class="flex flex-column">
-            <a class="btn btn-gray-filled mb1" href="https://www.facebook.com/roteskreuztirol"><i class="icon-facebook"></i>Facebook</a>
-            <a class="btn btn-gray-filled mb1" href="https://www.instagram.com/roteskreuztirol"><i class="icon-instagram"></i>Instagram</a>
-            <a class="btn btn-gray-filled mb1" href="https://www.youtube.com/c/roteskreuz"><i class="icon-youtube"></i>Youtube</a>
-            <a class="btn btn-gray-filled mb1" href="https://kraitzpunkt.podigee.io/episodes"><i class="icon-podcast"></i>Podcasts</a>
-            <a class="btn btn-gray-filled mb1" href="https://twitter.com/roteskreuztirol"><i class="icon-twitter"></i>Twitter</a>
-          </div>
-        </div>
-      </div>
-      <div class="px4 col-12 col-md-10 col-lg-8 legal flex items-center ">
-        <p>© 2022 Österreichisches Rotes Kreuz</p>
-        <a href="https://www.roteskreuz.at/tirol/ich-will-mehr-wissen/datenschutzerklaerung" class="btn">Datenschutz</a>
-        <a href="https://www.roteskreuz.at/seite-9" class="btn">Impressum</a>
-      </div>
-    </footer>
-    <div class="sticky-footer px4 col-12 col-md-10 col-lg-8 flex justify-between items-center">
-      <a href="#" class="share btn"><span>Seite Teilen</span><i class="icon-share"></i></a>
-      <a href="#" class="share btn"><span>Zum seitenanfang</span><i class="icon-share"></i></a>
+            <div class="grid" id="intro-grid">
+                <button class="col-6 sm-col-3 lg-col-2">
+                    <div class="wrapper">
+                        <h3>Kufstein</h3>
+                        <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero provident nisi odit neque, delectus voluptas quidem! Dicta, dignissimos voluptatibus.</div>
+                    </div>
+                </button>
+                <button class="col-6 sm-col-3 lg-col-2">
+                    <div class="wrapper">
+                        <h3>Landek</h3>
+                        <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero provident nisi odit neque, delectus voluptas quidem! Dicta, dignissimos voluptatibus.</div>
+                    </div>
+                </button>
+                <button class="col-6 sm-col-3 lg-col-2">
+                    <div class="wrapper">
+                        <h3>Wipptal</h3>
+                        <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero provident nisi odit neque, delectus voluptas quidem! Dicta, dignissimos voluptatibus.</div>
+                    </div>
+                </button>
+                <button class="col-6 sm-col-3 lg-col-2">
+                    <div class="wrapper">
+                        <h3>Imst</h3>
+                        <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero provident nisi odit neque, delectus voluptas quidem! Dicta, dignissimos voluptatibus.</div>
+                    </div>
+                </button>
+                <button class="col-6 sm-col-3 lg-col-2">
+                    <div class="wrapper">
+                        <h3>Telfs</h3>
+                        <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero provident nisi odit neque, delectus voluptas quidem! Dicta, dignissimos voluptatibus.</div>
+                    </div>
+                </button>
+                <button class="col-6 sm-col-3 lg-col-2">
+                    <div class="wrapper">
+                        <h3>Kramsach</h3>
+                        <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero provident nisi odit neque, delectus voluptas quidem! Dicta, dignissimos voluptatibus.</div>
+                    </div>
+                </button>
+            </div>
+            <div class="container mt3">
+                <h2>Second Hand für den guten Zweck</h2>
+                <h3 class="mb2">Die Kleiderläden des Roten Kreuzes</h3>
+                <p>Dem Roten Kreuz ist Nachhaltigkeit wichtig. Deshalb schenken wir gebrauchter Kleidung und modischen
+                    Accessoires ein zweites Leben und bieten Ihnen die Möglichkeit, hilfsbedürftige Menschen und das
+                    Rote Kreuz zu unterstützen. An neun Standorten in Tirol gibt es Rotkreuz-Kleiderläden, in denen
+                    Menschen mit geringem Einkommen leistbare Kleidung in guter Qualität erwerben können.</p>
+            </div>
+            <div class="container mt3">
+                <h2 class="mb2">Eine gute Alternative</h2>
+                <p>Neue Kleidung ist oft teuer und nicht jede*r kann sich diese leisten. Deshalb bietet das Rote Kreuz
+                    mit den Kleiderläden armutsgefährdeten Menschen eine Alternative zu herkömmlichen Kleidergeschäften.
+                    Unsere Second Hand Shops sind ein Ziel für jene, die einwandfreie und schöne Kleidung zu einem
+                    fairen Preis kaufen wollen oder sich keine teuren Teile leisten können. Und weil Kleider nun eben
+                    Leute machen, achten wir darauf, dass nur Stücke in guter Qualität in den Kleiderläden verkauft
+                    werden.</p>
+            </div>
+            <div class="container mt3">
+                <h2 class="mb2">Ein Zeichen gegen die Wegwerfgesellschaft</h2>
+                <p>Immer wieder werden Dinge, die gebraucht, aber völlig in Ordnung sind, weggeworfen. Wir setzen ein
+                    Zeichen gegen die Wegwerfgesellschaft, schützen unsere Umwelt und ermutigen Menschen dazu, etwas
+                    Gutes zu tun. Die Rotkreuz-Kleiderläden unterstützen armutsgefährdete Menschen und tragen somit zu
+                    einer besseren, sozialeren Zukunft bei.</p>
+            </div>
+            <div class="container mt3">
+                <h2>Welche Waren findet man im Kleiderladen?</h2>
+                <h4 class="mb2">Die Kleiderläden des Roten Kreuz führen ein umfangreiches Angebot an hochwertigen Waren:
+                </h4>
+                <p>
+                    <ul>
+                        <li>Bekleidung für Babys, Kinder, Jugendliche, Damen und Herren</li>
+                        <li>Sportbekleidung</li>
+                        <li>Schuhe, Stiefel, Hausschuhe</li>
+                        <li>Accessoires wie Mützen, Kappen, Schals, Tücher, Krawatten, Gürtel, Taschen, Rucksäcke oder
+                            Schmuck</li>
+                        <li>Tischwäsche, Bettwäsche</li>
+                        <li>Kinderspielsachen</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="container is-wide mt3 grid">
+                <div class="col-6 md-col-2">
+                    <img src="/images/R14A8684_small.webp" alt="">
+                </div>
+                <div class="col-6 md-col-2">
+                    <img src="/images/R14A8697_small.webp" alt="">
+                </div>
+                <div class="col-6 md-col-2">
+                    <img src="/images/R14A8567_small.webp" alt="">
+                </div>
+            </div>
+            <div class="mt3">
+                <div id="map-buttons">
+                    <button class="btn-primary" data-pane="stores">Shops</button>
+                    <button class="btn-primary" data-pane="containers">Sammelstellen</button>
+                </div>
+                <div id="map-wrapper">
+                    <!-- <div id="map-filter">
+                        <button data-pane>Alles</button>
+                        <button data-pane="stores">Nur Shops</button>
+                        <button data-pane="containers">Nur Sammelstellen</button>
+                    </div> -->
+                    <div id="map"></div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container is-wide grid pt2">
+                <div class="col-6 lg-col-3">
+                    <h3>Spendenkonto Rotes Kreuz Tirol</h3>
+                    <p>
+                        Tiroler Sparkesse<br>
+                        IBAN: AT19 1234 5678 9101 11213<br>
+                        BIC: SPHATAT22XXX<br>
+                        <a href="https://www.mein-roteskreuz.at/tirol" class="btn btn-gray my1 inline-block">Mein Rotes Kreuz Tirol</a>
+                    </p>
+                    <h3>Spendenkonto Rotes Kreuz Tirol Gemeinnützige Rettungsdienst GMBH</h3>
+                    <p>
+                        Hypo Tirol<br>
+                        IBAN: AT71 1234 5678 9101 11213<br>
+                        BIC: YPAT22
+                    </p>
+                </div>
+                <!-- <div class="col-6 lg-col-2">
+                    <h3>Häufig Gesuchte Seiten</h3>
+                    <p>
+                        <a href="https://www.roteskreuz.at/tirol/ich-will-helfen/erste-hilfe-kurse-uebersicht">Erste Hilfe Kurs Finden</a>
+                        <a href="https://www.roteskreuz.at/tirol/ich-will-helfen/so-kann-ich-blutspenden">Blutspende und Blutspendetermine</a>
+                        <a href="https://www.roteskreuz.at/tirol/rettungsdienst-tirol-die-richtige-rufnummer">Zivieldient beim Roten Kreuz</a>
+                        <a href="https://www.roteskreuz.at/tirol/kriseninterventionstagung">Zivieldient beim Roten Kreuz</a>
+                        <a href="https://www.roteskreuz.at/tirol/ich-will-helfen/zivildienst">Rund um Covid-19</a>
+                    </p>
+                </div> -->
+                <div class="lg-col-1"></div>
+                <div class="col-6 lg-col-2">
+                    <h3>Medien & Sozial</h3>
+                    <p>
+                        <a class="btn btn-gray block mb1" href="https://www.facebook.com/roteskreuztirol"><i class="icon-facebook"></i>Facebook</a>
+                        <a class="btn btn-gray block mb1" href="https://www.instagram.com/roteskreuztirol"><i class="icon-instagram"></i>Instagram</a>
+                        <a class="btn btn-gray block mb1" href="https://www.youtube.com/c/roteskreuz"><i class="icon-youtube"></i>Youtube</a>
+                        <a class="btn btn-gray block mb1" href="https://kraitzpunkt.podigee.io/episodes"><i class="icon-podcast"></i>Podcasts</a>
+                        <a class="btn btn-gray block mb1" href="https://twitter.com/roteskreuztirol"><i class="icon-twitter"></i>Twitter</a>
+                    </p>
+                </div>
+            </div>
+            <div id="legal" class="container is-wide bg-red flex mt2">
+                <p class="upper mr1 my1">© 2022 Österreichisches Rotes Kreuz</p>
+                <div class="my1">
+                    <a href="https://www.roteskreuz.at/tirol/ich-will-mehr-wissen/datenschutzerklaerung" class="btn btn-transparent mr1">Datenschutz</a>
+                    <a href="https://www.roteskreuz.at/seite-9" class="btn btn-transparent">Impressum</a>
+                </div>
+            </div>
+            <div id="additional" class="container is-wide">
+                <a href="#" class="btn btn-transparent my1"><span>Seite Teilen</span><i class="icon-share"></i></a>
+                <a href="#top" class="btn btn-transparent my1"><span>Zum seitenanfang</span><i class="icon-arrow-up"></i></a>
+            </div>
+        </footer>
     </div>
+    <script src="/external/leaflet.js"></script>
+    <script src="/external/leaflet-gesture-handling.min.js"></script>
+    <script>
+        var map = L.map('map', {
+            gestureHandling: true,
+        }).setView([50.4, 30.5], 9);
+        map.createPane("stores", document.getElementById("#map"));
+        map.createPane("containers", document.getElementById("#map"));
 
-    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
-    <script type="module" src="/main.js"></script>
-    <!-- prugecss classes -->
-    <div style="display: none !important;" class="active"></div>
-  </body>
+        L.tileLayer(
+            'https://tile.jawg.io/jawg-streets/{z}/{x}/{y}{r}.png?access-token=PFmBE0K0sqr37nl5RjoBhS8xFgB4rjvaQarqAcjaKKvCJaqHRXvZoFqV9gYz8K43', {}
+        ).addTo(map);
+        map.attributionControl.addAttribution(
+            "<a href=\"https://www.jawg.io\" target=\"_blank\">&copy; Jawg</a> - <a href=\"https://www.openstreetmap.org\" target=\"_blank\">&copy; OpenStreetMap</a>"
+        )
+
+        let storeIcon = L.icon({
+            iconUrl: "/store.svg",
+            iconSize: [30, 30],
+            iconAnchor: [12, 24],
+        });
+        let containerIcon = L.icon({
+            iconUrl: "/store.svg",
+            iconSize: [30, 30],
+            iconAnchor: [12, 24],
+        });
+        let stores = [{
+                latlng: L.latLng(50.1, 30.5),
+                options: {
+                    title: "",
+                    pane: "stores",
+                }
+            },
+            {
+                latlng: L.latLng(50.2, 30.5),
+                options: {
+                    title: "",
+                    pane: "stores",
+                }
+            },
+            {
+                latlng: L.latLng(50.3, 30.5),
+                options: {
+                    title: "",
+                    pane: "stores",
+                }
+            },
+            {
+                latlng: L.latLng(50.4, 30.5),
+                options: {
+                    title: "",
+                    pane: "stores",
+                }
+            },
+            {
+                latlng: L.latLng(50.5, 30.5),
+                options: {
+                    title: "",
+                    pane: "stores",
+                }
+            },
+            {
+                latlng: L.latLng(50.6, 30.5),
+                options: {
+                    title: "",
+                    pane: "containers",
+                }
+            },
+        ].forEach(marker => {
+            L.marker(marker.latlng, {
+                ...marker.options,
+                ...{
+                    icon: marker.options.pane == "stores" ? storeIcon : containerIcon,
+                }
+            }).addTo(map);
+        });
+        document.querySelectorAll("[data-pane]").forEach(btn => {
+            btn.addEventListener("click", e => {
+                document.querySelectorAll("[data-pane]").forEach(btn => {
+                    btn.classList.remove("active")
+                })
+                document.querySelectorAll(`[data-pane = "${btn.dataset.pane}"]`).forEach(btn => btn
+                    .classList.add("active"));
+                switch (btn.dataset.pane) {
+                    case "stores":
+                        map.getPane("stores").style.zIndex = 600;
+                        map.getPane("containers").style.zIndex = 0;
+                        break;
+                    case "containers":
+                        map.getPane("stores").style.zIndex = 0;
+                        map.getPane("containers").style.zIndex = 600;
+                        break;
+                    default:
+                        map.getPane("stores").style.zIndex = 600;
+                        map.getPane("containers").style.zIndex = 600;
+                        break;
+                }
+            });
+        });
+
+        document.querySelectorAll("#intro-grid .wrapper .info").forEach(item => {
+            // item.setAttribute("targetheight",item.clientHeight + "px");
+            item.style.setProperty("--targetheight", item.clientHeight + "px");
+            item.style.height = 0;
+        })
+    </script>
+</body>
+
 </html>
+
+<!-- <a href="https://www.flaticon.com/free-icons/bag" title="bag icons">Bag icons created by Phoenix Group - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/container" title="container icons">Container icons created by Freepik - Flaticon</a> -->
