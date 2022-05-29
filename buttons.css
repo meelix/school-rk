@@ -1,0 +1,76 @@
+a {
+  color: var(--primary);
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: var(--primary-darker);
+}
+
+.btn,
+button {
+  padding: 0.25rem 1.125rem;
+  color: var(--btn-color);
+  border: 1px solid var(--btn-border);
+  background-color: var(--btn-bg);
+  transition: color 0.1s, border 0.1s, background-color 0.1s;
+  text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+button:hover,
+button:focus,
+button:active,
+button.active {
+  color: var(--btn-color_hover);
+  background-color: var(--btn-bg_hover);
+  border-color: var(--btn-border_hover);
+}
+
+.btn:active,
+button:active {
+  box-shadow: 0 0 1px 1px var(--btn-border_hover);
+}
+
+.btn-primary {
+  --btn-color: #fff;
+  --btn-color_hover: #fff;
+  --btn-bg: var(--primary);
+  --btn-bg_hover: var(--primary-darker);
+}
+
+.btn-gray {
+  --btn-color: #fff;
+  --btn-bg: var(--gray);
+  --btn-bg_hover: var(--gray);
+  position: relative;
+}
+
+.btn-transparent {
+  --btn-color: currentColor;
+  --btn-bg: rgba(0, 0, 0, 0.1);
+  --btn-bg_hover: rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.btn-gray:after,
+.btn-transparent:after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0;
+  transition: width .2s;
+  background-color: var(--btn-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.btn-gray:hover:after,
+.btn-transparent:hover:after {
+  width: 100%;
+}
